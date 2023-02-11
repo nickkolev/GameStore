@@ -6,7 +6,6 @@ import java.util.Set;
 
 @Entity
 public class ManyEntity {
-
     @Id
     private String uuid;
 
