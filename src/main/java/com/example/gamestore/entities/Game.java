@@ -6,6 +6,7 @@ import java.time.LocalDate;
 
 @Entity(name = "games")
 public class Game {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -40,6 +41,7 @@ public class Game {
         this.description = description;
         this.releaseDate = releaseDate;
     }
+
 
     public int getId() {
         return id;
@@ -104,4 +106,6 @@ public class Game {
     public void setReleaseDate(LocalDate releaseDate) {
         this.releaseDate = releaseDate;
     }
+
+
 }
